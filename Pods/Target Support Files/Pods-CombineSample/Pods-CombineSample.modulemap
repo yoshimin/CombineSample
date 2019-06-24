@@ -1,0 +1,6 @@
+framework module Pods_CombineSample {
+  umbrella header "Pods-CombineSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,27 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C4AF96122BA236500148353 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AF96022BA236500148353 /* MainViewPresenter.swift */; };
+		8C4AF96422BA240100148353 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AF96322BA240100148353 /* Location.swift */; };
+		8C4AF96922BA2C6D00148353 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AF96822BA2C6D00148353 /* MainViewInteractor.swift */; };
+		8C4AF96E22BA300D00148353 /* CurrentWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AF96D22BA300D00148353 /* CurrentWeatherRepository.swift */; };
+		8C4AF97422BA32D100148353 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AF97322BA32D100148353 /* Defaults.swift */; };
+		8CE18DD022BB296E007C1217 /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DCF22BB296E007C1217 /* MainViewBuilder.swift */; };
+		8CE18DD222BB2BB0007C1217 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DD122BB2BB0007C1217 /* Storyboards.swift */; };
+		8CE18DD522BB36FC007C1217 /* OpenWeatherMapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DD422BB36FC007C1217 /* OpenWeatherMapRequest.swift */; };
+		8CE18DDA22BB3D8C007C1217 /* PrefectureListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DD922BB3D8C007C1217 /* PrefectureListRepository.swift */; };
+		8CE18DDC22BB3E5C007C1217 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DDB22BB3E5C007C1217 /* CurrentWeather.swift */; };
+		8CE18DDF22BB403D007C1217 /* PrefectureWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DDE22BB403D007C1217 /* PrefectureWeather.swift */; };
+		8CE18DE122BB4745007C1217 /* CurrentWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DE022BB4745007C1217 /* CurrentWeatherRequest.swift */; };
+		8CE18DE322BB7C6A007C1217 /* PlainDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE18DE222BB7C6A007C1217 /* PlainDataParser.swift */; };
 		8CE547A022BA02B3004EC347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE5479F22BA02B3004EC347 /* AppDelegate.swift */; };
-		8CE547A222BA02B3004EC347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE547A122BA02B3004EC347 /* SceneDelegate.swift */; };
-		8CE547A422BA02B3004EC347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE547A322BA02B3004EC347 /* ViewController.swift */; };
-		8CE547A722BA02B3004EC347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE547A522BA02B3004EC347 /* Main.storyboard */; };
 		8CE547A922BA02B4004EC347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE547A822BA02B4004EC347 /* Assets.xcassets */; };
 		8CE547AC22BA02B4004EC347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE547AA22BA02B4004EC347 /* LaunchScreen.storyboard */; };
+		8CE547B422BA0310004EC347 /* PrefectureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE547B322BA0310004EC347 /* PrefectureListViewController.swift */; };
+		8CE547B822BA038C004EC347 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE547B722BA038C004EC347 /* MainViewController.swift */; };
+		8CE547BA22BA039A004EC347 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE547B922BA039A004EC347 /* MainView.storyboard */; };
+		8CE547BC22BA04A5004EC347 /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE547BB22BA04A5004EC347 /* MainViewRouter.swift */; };
+		8CE547C022BA05D2004EC347 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE547BF22BA05D2004EC347 /* DetailViewController.swift */; };
+		8CE547C222BA1074004EC347 /* prefectures.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CE547C122BA1074004EC347 /* prefectures.json */; };
+		F405EE45BE05D6E351B6F10E /* Pods_CombineSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B322FDB39691B332293932 /* Pods_CombineSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E2C8D8FC044D946E797B92C /* Pods-CombineSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineSample.debug.xcconfig"; path = "Target Support Files/Pods-CombineSample/Pods-CombineSample.debug.xcconfig"; sourceTree = "<group>"; };
+		8C4AF96022BA236500148353 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		8C4AF96322BA240100148353 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8C4AF96822BA2C6D00148353 /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		8C4AF96D22BA300D00148353 /* CurrentWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRepository.swift; sourceTree = "<group>"; };
+		8C4AF96F22BA313800148353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8C4AF97322BA32D100148353 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		8CE18DCF22BB296E007C1217 /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		8CE18DD122BB2BB0007C1217 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		8CE18DD422BB36FC007C1217 /* OpenWeatherMapRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapRequest.swift; sourceTree = "<group>"; };
+		8CE18DD922BB3D8C007C1217 /* PrefectureListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureListRepository.swift; sourceTree = "<group>"; };
+		8CE18DDB22BB3E5C007C1217 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		8CE18DDE22BB403D007C1217 /* PrefectureWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureWeather.swift; sourceTree = "<group>"; };
+		8CE18DE022BB4745007C1217 /* CurrentWeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRequest.swift; sourceTree = "<group>"; };
+		8CE18DE222BB7C6A007C1217 /* PlainDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainDataParser.swift; sourceTree = "<group>"; };
 		8CE5479C22BA02B3004EC347 /* CombineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE5479F22BA02B3004EC347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CE547A122BA02B3004EC347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CE547A322BA02B3004EC347 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CE547A622BA02B3004EC347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CE547A822BA02B4004EC347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE547AB22BA02B4004EC347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE547AD22BA02B4004EC347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CE547B322BA0310004EC347 /* PrefectureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureListViewController.swift; sourceTree = "<group>"; };
+		8CE547B722BA038C004EC347 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8CE547B922BA039A004EC347 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		8CE547BB22BA04A5004EC347 /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
+		8CE547BF22BA05D2004EC347 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8CE547C122BA1074004EC347 /* prefectures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = prefectures.json; sourceTree = "<group>"; };
+		A4B322FDB39691B332293932 /* Pods_CombineSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB3F9140C9B1E752E2A3B2E /* Pods-CombineSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineSample.release.xcconfig"; path = "Target Support Files/Pods-CombineSample/Pods-CombineSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +68,114 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F405EE45BE05D6E351B6F10E /* Pods_CombineSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C27D0E929E7952F0BCFE2EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E2C8D8FC044D946E797B92C /* Pods-CombineSample.debug.xcconfig */,
+				BCB3F9140C9B1E752E2A3B2E /* Pods-CombineSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1AD691F4FB4A730A31783F15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AF96F22BA313800148353 /* CoreLocation.framework */,
+				A4B322FDB39691B332293932 /* Pods_CombineSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C4AF95C22BA1FAC00148353 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CE547B922BA039A004EC347 /* MainView.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C4AF95D22BA20BC00148353 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				8CE18DD122BB2BB0007C1217 /* Storyboards.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		8C4AF95F22BA233D00148353 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AF96022BA236500148353 /* MainViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8C4AF96222BA23F200148353 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AF96322BA240100148353 /* Location.swift */,
+				8CE18DDB22BB3E5C007C1217 /* CurrentWeather.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8C4AF96722BA2C5600148353 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AF96822BA2C6D00148353 /* MainViewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8C4AF96A22BA2F4400148353 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AF96D22BA300D00148353 /* CurrentWeatherRepository.swift */,
+				8CE18DD922BB3D8C007C1217 /* PrefectureListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8CE18DCE22BB2927007C1217 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8CE18DCF22BB296E007C1217 /* MainViewBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8CE18DD322BB36D9007C1217 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8CE18DD422BB36FC007C1217 /* OpenWeatherMapRequest.swift */,
+				8CE18DE022BB4745007C1217 /* CurrentWeatherRequest.swift */,
+				8CE18DE222BB7C6A007C1217 /* PlainDataParser.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8CE18DDD22BB3FEF007C1217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CE18DDE22BB403D007C1217 /* PrefectureWeather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8CE5479322BA02B3004EC347 = {
 			isa = PBXGroup;
 			children = (
 				8CE5479E22BA02B3004EC347 /* CombineSample */,
 				8CE5479D22BA02B3004EC347 /* Products */,
+				0C27D0E929E7952F0BCFE2EB /* Pods */,
+				1AD691F4FB4A730A31783F15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +190,43 @@
 		8CE5479E22BA02B3004EC347 /* CombineSample */ = {
 			isa = PBXGroup;
 			children = (
+				8CE18DD322BB36D9007C1217 /* API */,
 				8CE5479F22BA02B3004EC347 /* AppDelegate.swift */,
-				8CE547A122BA02B3004EC347 /* SceneDelegate.swift */,
-				8CE547A322BA02B3004EC347 /* ViewController.swift */,
-				8CE547A522BA02B3004EC347 /* Main.storyboard */,
 				8CE547A822BA02B4004EC347 /* Assets.xcassets */,
-				8CE547AA22BA02B4004EC347 /* LaunchScreen.storyboard */,
+				8CE18DCE22BB2927007C1217 /* Builder */,
+				8C4AF97322BA32D100148353 /* Defaults.swift */,
+				8C4AF96222BA23F200148353 /* Entity */,
 				8CE547AD22BA02B4004EC347 /* Info.plist */,
+				8C4AF96722BA2C5600148353 /* Interactor */,
+				8CE547AA22BA02B4004EC347 /* LaunchScreen.storyboard */,
+				8CE18DDD22BB3FEF007C1217 /* Model */,
+				8CE547C122BA1074004EC347 /* prefectures.json */,
+				8C4AF95F22BA233D00148353 /* Presenter */,
+				8C4AF96A22BA2F4400148353 /* Repository */,
+				8C4AF95C22BA1FAC00148353 /* Resources */,
+				8CE547BD22BA04A9004EC347 /* Router */,
+				8C4AF95D22BA20BC00148353 /* SwiftGen */,
+				8CE547BE22BA04B8004EC347 /* View */,
 			);
 			path = CombineSample;
+			sourceTree = "<group>";
+		};
+		8CE547BD22BA04A9004EC347 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8CE547BB22BA04A5004EC347 /* MainViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8CE547BE22BA04B8004EC347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CE547B322BA0310004EC347 /* PrefectureListViewController.swift */,
+				8CE547B722BA038C004EC347 /* MainViewController.swift */,
+				8CE547BF22BA05D2004EC347 /* DetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CE547B022BA02B4004EC347 /* Build configuration list for PBXNativeTarget "CombineSample" */;
 			buildPhases = (
+				3E62B1BEB1AC176DDEC32DBF /* [CP] Check Pods Manifest.lock */,
 				8CE5479822BA02B3004EC347 /* Sources */,
 				8CE5479922BA02B3004EC347 /* Frameworks */,
 				8CE5479A22BA02B3004EC347 /* Resources */,
+				8C4AF95E22BA21A400148353 /* ShellScript */,
+				2B6C9810BC824C3857A06465 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +291,102 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE547AC22BA02B4004EC347 /* LaunchScreen.storyboard in Resources */,
+				8CE547BA22BA039A004EC347 /* MainView.storyboard in Resources */,
 				8CE547A922BA02B4004EC347 /* Assets.xcassets in Resources */,
-				8CE547A722BA02B3004EC347 /* Main.storyboard in Resources */,
+				8CE547C222BA1074004EC347 /* prefectures.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B6C9810BC824C3857A06465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombineSample/Pods-CombineSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CombineSample/Pods-CombineSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CombineSample/Pods-CombineSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E62B1BEB1AC176DDEC32DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CombineSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C4AF95E22BA21A400148353 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT\"/SwiftGen/bin/swiftgen\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CE5479822BA02B3004EC347 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE547A422BA02B3004EC347 /* ViewController.swift in Sources */,
+				8CE547BC22BA04A5004EC347 /* MainViewRouter.swift in Sources */,
+				8CE547B822BA038C004EC347 /* MainViewController.swift in Sources */,
+				8CE18DDC22BB3E5C007C1217 /* CurrentWeather.swift in Sources */,
+				8CE18DDF22BB403D007C1217 /* PrefectureWeather.swift in Sources */,
+				8C4AF96422BA240100148353 /* Location.swift in Sources */,
+				8C4AF96122BA236500148353 /* MainViewPresenter.swift in Sources */,
+				8CE18DD522BB36FC007C1217 /* OpenWeatherMapRequest.swift in Sources */,
+				8CE547B422BA0310004EC347 /* PrefectureListViewController.swift in Sources */,
+				8CE18DD222BB2BB0007C1217 /* Storyboards.swift in Sources */,
+				8CE18DD022BB296E007C1217 /* MainViewBuilder.swift in Sources */,
+				8CE547C022BA05D2004EC347 /* DetailViewController.swift in Sources */,
+				8C4AF96E22BA300D00148353 /* CurrentWeatherRepository.swift in Sources */,
+				8CE18DE122BB4745007C1217 /* CurrentWeatherRequest.swift in Sources */,
+				8CE18DDA22BB3D8C007C1217 /* PrefectureListRepository.swift in Sources */,
+				8CE18DE322BB7C6A007C1217 /* PlainDataParser.swift in Sources */,
 				8CE547A022BA02B3004EC347 /* AppDelegate.swift in Sources */,
-				8CE547A222BA02B3004EC347 /* SceneDelegate.swift in Sources */,
+				8C4AF97422BA32D100148353 /* Defaults.swift in Sources */,
+				8C4AF96922BA2C6D00148353 /* MainViewInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8CE547A522BA02B3004EC347 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CE547A622BA02B3004EC347 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8CE547AA22BA02B4004EC347 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +514,7 @@
 		};
 		8CE547B122BA02B4004EC347 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2C8D8FC044D946E797B92C /* Pods-CombineSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +533,7 @@
 		};
 		8CE547B222BA02B4004EC347 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB3F9140C9B1E752E2A3B2E /* Pods-CombineSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

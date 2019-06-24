@@ -1,0 +1,24 @@
+PODS:
+  - APIKit (5.0.0)
+  - DefaultsKit (0.2.0)
+  - SwiftGen (6.1.0)
+
+DEPENDENCIES:
+  - APIKit (~> 5.0)
+  - DefaultsKit
+  - SwiftGen
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - APIKit
+    - DefaultsKit
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  APIKit: b27d79b022733b2f50e7a092e67c4cb9ea30f968
+  DefaultsKit: 6c767941b2c3fe34c4d70e300e6c3b80c94964dd
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+
+PODFILE CHECKSUM: 999318f16a89ff172adf38eaf8569d8b81602ea2
+
+COCOAPODS: 1.7.1

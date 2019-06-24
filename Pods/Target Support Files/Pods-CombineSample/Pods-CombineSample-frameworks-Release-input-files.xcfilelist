@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-CombineSample/Pods-CombineSample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework
+${BUILT_PRODUCTS_DIR}/DefaultsKit/DefaultsKit.framework

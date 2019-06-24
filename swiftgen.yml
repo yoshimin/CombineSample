@@ -1,0 +1,8 @@
+input_dir: CombineSample/Resources
+output_dir: CombineSample/SwiftGen
+
+ib:
+  inputs: ./
+  outputs:
+    templateName: scenes-swift4
+    output: Storyboards.swift
