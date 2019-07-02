@@ -52,9 +52,14 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainViewCell", for: indexPath) as! MainViewCell
 
-        let location = prefectures[indexPath.row]
-        cell.setup(location)
+        let prefecture = prefectures[indexPath.row]
+        cell.setup(prefecture)
 
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let prefecture = prefectures[indexPath.row]
+        presenter?.inputs.showDetail.send(prefecture.id)
     }
 }

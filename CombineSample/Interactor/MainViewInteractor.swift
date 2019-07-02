@@ -32,7 +32,7 @@ class MainViewInteractorImpl: MainViewInteractor {
                 let publishers = locations.compactMap{ location in
                     return self?.currentWeatherRepository.fetch(latitude: location.latitude, longitude: location.longitude)
                         .map{ weather -> PrefectureWeather in
-                            return PrefectureWeather(name: location.name, code: weather.weather.first!.main, icon: weather.weather.first!.icon, temp: weather.main.temp)
+                            return PrefectureWeather(id: weather.id, name: location.name, code: weather.weather.first!.main, icon: weather.weather.first!.icon, temp: weather.main.temp)
                         }
                         .eraseToAnyPublisher()
                 }

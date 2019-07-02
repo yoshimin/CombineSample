@@ -9,6 +9,7 @@
 import Foundation
 
 struct PrefectureWeather {
+    let id: Int
     let name: String
     let code: WeatherCode
     let icon: String

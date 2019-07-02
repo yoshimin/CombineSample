@@ -12,6 +12,7 @@ import SwiftUI
 
 protocol MainViewPresenterInputs {
     var fetch: PassthroughSubject<Void,Never> { get }
+    var showDetail: PassthroughSubject<Int,Never> { get }
 }
 
 protocol MainViewPresenterOutputs {
@@ -23,6 +24,7 @@ protocol MainViewPresenter {
     var inputs: MainViewPresenterInputs { get }
     var outputs: MainViewPresenterOutputs { get }
     var interactor: MainViewInteractor { get }
+    var wireframe: MainViewWireframe { get }
 }
 
 final class MainViewPresenterImpl: MainViewPresenter {
@@ -30,7 +32,9 @@ final class MainViewPresenterImpl: MainViewPresenter {
     var outputs: MainViewPresenterOutputs { return self }
 
     let interactor: MainViewInteractor
+    let wireframe: MainViewWireframe
     let fetch = PassthroughSubject<Void, Never>()
+    let showDetail = PassthroughSubject<Int, Never>()
     let didChange = PassthroughSubject<Void, Never>()
 
     private(set) var prefectures: [PrefectureWeather] = [] {
@@ -40,19 +44,22 @@ final class MainViewPresenterImpl: MainViewPresenter {
     }
     private lazy var updatePrefectures = Subscribers.Assign(object: self, keyPath: \.prefectures)
 
-    private let prefecturesSubject = PassthroughSubject<[PrefectureWeather], Never>()
-
-    init(interactor: MainViewInteractor) {
+    init(interactor: MainViewInteractor, wireframe: MainViewWireframe) {
         self.interactor = interactor
+        self.wireframe = wireframe
 
         let _ = fetch
             .flatMap{ _ in
                 interactor.fetch()
-                    .catch { error -> AnyPublisher<[PrefectureWeather], Never> in
-                        return Publishers.Empty<[PrefectureWeather], Never>().eraseToAnyPublisher()
-                }
+                    .replaceError(with: [])
+                    .eraseToAnyPublisher()
             }
             .receive(subscriber: updatePrefectures)
+
+        let _ = showDetail
+            .sink { id in
+                wireframe.showDetail(cityId: id)
+        }
     }
 }
 

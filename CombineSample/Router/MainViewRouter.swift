@@ -9,22 +9,18 @@
 import UIKit
 
 protocol MainViewWireframe {
-    func showDetail()
-    func showPrefectureList()
+    func showDetail(cityId: Int)
 }
 
 class MainViewRouter: MainViewWireframe {
     weak var viewController: UIViewController?
 
-    private init(viewController: UIViewController) {
+    init(viewController: UIViewController) {
         self.viewController = viewController
     }
 
-    func showDetail() {
-
-    }
-
-    func showPrefectureList() {
-        
+    func showDetail(cityId: Int) {
+        let detail = DetailViewBuilder.build(cityId: cityId)
+        viewController?.navigationController?.pushViewController(detail, animated: true)
     }
 }

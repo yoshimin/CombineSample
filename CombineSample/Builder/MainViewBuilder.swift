@@ -10,10 +10,11 @@ import UIKit
 
 struct MainViewBuilder {
     static func build() -> MainViewController {
+        let viewController = StoryboardScene.MainView.initialScene.instantiate()
         let interactor = MainViewInteractorImpl(prefectureListRepository: PrefectureListRepositoryImpl(),
                                                 currentWeatherRepository: CurrentWeatherRepositoryImpl())
-        let presenter = MainViewPresenterImpl(interactor: interactor)
-        let viewController = StoryboardScene.MainView.initialScene.instantiate()
+        let wireframe = MainViewRouter(viewController: viewController)
+        let presenter = MainViewPresenterImpl(interactor: interactor, wireframe: wireframe)
         viewController.presenter = presenter
         return viewController
     }
